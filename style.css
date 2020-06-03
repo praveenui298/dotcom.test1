@@ -256,6 +256,12 @@ ul {
   display: flex;
   margin: 30px auto;
 }
+
+.whyDA .bg-container .item img{
+    width: 30px;
+    height: 30px;
+}
+  
 .whyDA .bg-container p {
   margin-left: 20px;
 }
@@ -333,6 +339,7 @@ ul {
 }
 .footer-img .img-container img {
   width: 100%;
+  height: 250px;
 }
 .footer-img .img-container .img-desc {
   position: absolute;
@@ -488,6 +495,11 @@ ul.social-links li a {
   }
 
   /* footer */
+
+  .footer-img .img-container img {
+    width: 100%;
+    height: 100%;
+  }
 
   .footer-img .img-container .img-desc {
     background-color: var(--logoPrimary);
