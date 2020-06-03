@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* global variables */
+:root {
+  --linear: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  --shadow: rgba(0, 0, 0, 0.5);
+  --logoPrimary: #009b9e;
+  --logoSecondary: #0e1b64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* navbar */
+nav {
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.toggler-button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.nav-header img {
+  display: block;
+}
+.logo {
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+.links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 1rem 1rem;
+}
+
+/* .links{
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+} */
+.showlinks {
+  height: 23rem;
+}
+
+.showtoggle {
+  transform: rotate(90deg);
+}
+/* banner */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: calc(100vh - 100px);
+  background: var(--linear), url(./images/ban_slide1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-text {
+  color: white;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  margin: 30px 0;
+}
+.banner-text button {
+  background: transparent;
+  border: transparent;
+  outline: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner p {
+  font-size: 32px;
+  color: white;
+}
+
+.top-header {
+  display: none;
+}
+
+/* services */
+
+.store-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.store-services h4 {
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: normal;
+  color: gray;
+  text-transform: uppercase;
+}
+
+/* single service */
+
+.single-service {
+  width: 80%;
+  margin: 20px 80px;
+  padding-top: 20px;
+  background-color: #ddd;
+}
+.single-service .img-container img {
+}
+
+.single-service .service-info h3 {
+  margin: 10px auto;
+}
+
+.single-service .service-info p {
+  margin: 20px 30px;
+}
+
+.single-service .button-info button {
+  border: transparent;
+  background-color: var(--logoPrimary);
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+
+/* review */
+
+.review-container {
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.review-container img {
+  display: block;
+  margin: 50px auto;
+}
+
+.review-container h4 {
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* video container */
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0;
+}
+.video-container img {
+  width: 100%;
+}
+
+.video-container .video-icon img {
+  position: absolute;
+  top: 40%;
+  width: 7%;
+  left: 46%;
+  text-align: center;
+  /* z-index: 1; */
+}
+.video-container .video-text h1 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  color: white;
+}
+
+.color {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.whyDA .container {
+  min-height: 70vh;
+  background: var(--linear), url(./images/burns_bg.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.whyDA .container .text {
+  padding: 20px;
+}
+
+.whyDA .container .text h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.whyDA .container .text h1 {
+  font-size: 35px;
+  margin: 20px;
+  text-align: center;
+}
+
+.whyDA .container .text p {
+  line-height: 25px;
+}
+
+.whyDA .bg-container {
+  background: var(--logoPrimary);
+  padding: 20px;
+  width: 70%;
+}
+
+.whyDA .bg-container button {
+  background: white;
+  color: black;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.whyDA .bg-container .item {
+  display: flex;
+  margin: 30px auto;
+}
+.whyDA .bg-container p {
+  margin-left: 20px;
+}
+
+.offer .img-container {
+  position: relative;
+}
+.offer .img-container img {
+  width: 100%;
+  height: 200px;
+  margin: 50px auto;
+  display: block;
+}
+
+.offer .img-container .offer-desc {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  text-align: center;
+  color: white;
+}
+
+.offer h4 {
+  margin: 10px 0;
+}
+
+.offer .border-bottom {
+  border-bottom: 3px solid var(--logoPrimary);
+  width: 20%;
+  margin: 10px auto;
+}
+
+.offer .offer-links {
+  display: flex;
+}
+.offer .offer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px !important;
+  margin: 10px 20px;
+}
+
+.fb {
+  display: flex;
+  flex-direction: column;
+}
+.fb .img img {
+  width: 100%;
+  margin: 20px 0;
+}
+.fb .container {
+  text-align: center;
+}
+.fb .container h4 {
+  color: gray;
+  margin: 20px 0;
+}
+.fb .container .item {
+  margin: 25px 0;
+}
+
+.fb .container .item p {
+  margin: 10px 0;
+}
+
+.fb .container .item button {
+  border: none;
+  padding: 10px;
+}
+
+/* footer */
+.footer-img .img-container {
+  position: relative;
+  overflow: hidden;
+}
+.footer-img .img-container img {
+  width: 100%;
+}
+.footer-img .img-container .img-desc {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: white;
+  text-align: center;
+}
+
+.footer-img .img-container .img-desc h2 {
+  font-size: 30px;
+}
+.footer-img .img-container .img-desc h5 {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.footer-img .img-container .img-desc button {
+  border: none;
+  padding: 8px;
+}
+
+/* footer links */
+
+.footer-links .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links .container .item {
+  margin: 20px auto;
+}
+
+/* copyrights */
+
+.copyrights .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+ul.social-links {
+  margin: 30px 0;
+}
+ul.social-links li a {
+  color: white;
+  margin: 0 10px;
+}
+
+.copyrights .container p {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 576px) {
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .toggler-button {
+    display: none;
+  }
+
+  .nav-center {
+    max-width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-header {
+    background-color: black;
+    padding: 10px;
+    color: silver;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+  }
+  .top-header .text {
+    margin: 0 30px;
+  }
+
+  .top-header .fas {
+    margin: 0 5px;
+    font-size: 17px;
+  }
+  /* services */
+
+  .store-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 100px;
+  }
+
+  .single-service {
+    width: 30%;
+    margin: 20px 10px;
+    padding-top: 20px;
+    background-color: #ddd;
+  }
+
+  .video-container .video-text h1 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    color: white;
+  }
+
+  /* why da */
+
+  .whyDA .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .whyDA .container .text {
+    width: 30%;
+  }
+
+  .whyDA .bg-container {
+    width: 30%;
+  }
+
+  /* offer */
+  .offer {
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* fb */
+
+  .fb {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .fb .container .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .fb .container .item button {
+    margin-left: 70px;
+    white-space: nowrap;
+  }
+
+  /* footer */
+
+  .footer-img .img-container .img-desc {
+    background-color: var(--logoPrimary);
+    opacity: 0.9;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    padding: 30px 20px;
+  }
+
+  /* footer links */
+
+  .footer-links .container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+  }
+
+  /* copyrights */
+
+  .copyrights .container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+  }
+
+  ul.social-links {
+    margin: 0 0;
+  }
+
+  .copyrights .container p {
+    margin-bottom: 0px;
+  }
+}
